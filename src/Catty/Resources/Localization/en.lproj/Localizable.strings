@@ -59,6 +59,9 @@
 "All known Bluetooth devices successfully removed" = "All known Bluetooth devices successfully removed";
 
 /* No comment provided by engineer. */
+"all scripts" = "all scripts";
+
+/* No comment provided by engineer. */
 "Allow the app to control Arduino boards" = "Allow the app to control Arduino boards";
 
 /* No comment provided by engineer. */
@@ -1217,6 +1220,9 @@
 "Organ" = "Organ";
 
 /* No comment provided by engineer. */
+"other scripts of this actor or object" = "other scripts of this actor or object";
+
+/* No comment provided by engineer. */
 "Password" = "Password";
 
 /* No comment provided by engineer. */
@@ -1658,6 +1664,9 @@
 "Stitch" = "Stitch";
 
 /* No comment provided by engineer. */
+"Stop" = "Stop";
+
+/* No comment provided by engineer. */
 "Stop all sounds" = "Stop all sounds";
 
 /* No comment provided by engineer. */
@@ -1755,6 +1764,9 @@
 
 /* No comment provided by engineer. */
 "This list can not be deleted because it is still in use." = "This list can not be deleted because it is still in use.";
+
+/* No comment provided by engineer. */
+"this script" = "this script";
 
 /* No comment provided by engineer. */
 "This variable can not be deleted because it is still in use." = "This variable can not be deleted because it is still in use.";

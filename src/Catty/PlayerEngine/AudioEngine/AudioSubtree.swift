@@ -83,6 +83,11 @@ import Foundation
         audioPlayerCache.removeAllObjects()
     }
 
+    func stopAudio(for key: String) {
+        audioPlayerCache.object(forKey: key)?.stop()
+        audioPlayerCache.removeObject(for: key)
+    }
+
     func resumeAllAudioPlayers() {
         for audioPlayerKey in audioPlayerCache.getKeySet() {
             audioPlayerCache.object(forKey: audioPlayerKey)?.resume()

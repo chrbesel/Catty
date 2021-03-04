@@ -141,6 +141,11 @@ import Foundation
         subtree.setInstrument(instrument)
     }
 
+    func stopAudio(for key: String, and filename: String) {
+        let subtree = getSubtree(key: key)
+        subtree.stopAudio(for: filename)
+    }
+
     private func getSubtree(key: String) -> AudioSubtree {
         subtreeCreationQueue.sync {
             if subtrees[key] == nil {

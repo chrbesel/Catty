@@ -32,10 +32,11 @@
             let filePath = scene.soundsPath()
             else { return .invalidInstruction }
 
-        return CBInstruction.waitExecClosure { _, scheduler in
+        return CBInstruction.waitExecClosure { context, scheduler in
             let audioEngine = (scheduler as! CBScheduler).getAudioEngine()
             let soundIsFinishedExpectation = CBExpectation()
             let fileName = sound.fileName
+            context.soundList.insert(fileName)
 
             DispatchQueue.main.async {
                 audioEngine.playSound(fileName: fileName, key: objectName, filePath: filePath, expectation: soundIsFinishedExpectation)

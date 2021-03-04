@@ -28,6 +28,7 @@ protocol CBScriptContextProtocol: AnyObject {
     var touchManager: TouchManagerProtocol { get }
     var state: CBScriptContextState { get set }
     var index: Int { get set }
+    var soundList: Set<String> { get set }
 
     func appendInstructions(_ instructionList: [CBInstruction])
     func nextInstruction() -> CBInstruction?
@@ -60,6 +61,7 @@ class CBScriptContext: CBScriptContextProtocol {
     final var state: CBScriptContextState
     final var count: Int { _instructionList.count }
     final var index: Int = 0
+    final var soundList: Set<String> = []
 
     private final var _instructionPointer: Int = 0
     private lazy final var _instructionList = [CBInstruction]()

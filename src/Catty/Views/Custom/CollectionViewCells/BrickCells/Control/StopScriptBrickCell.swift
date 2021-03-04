@@ -20,27 +20,26 @@
  *  along with this program.  If not, see http://www.gnu.org/licenses/.
  */
 
-@objc extension PlaySoundBrick: CBInstructionProtocol {
+ class StopScriptBrickCell: BrickCell, BrickCellProtocol {
 
-    @nonobjc func instruction() -> CBInstruction {
+    var titleLabel: UILabel?
+    var comboBox: iOSCombobox?
 
-        guard let objectName = self.script?.object?.name,
-            let scene = self.script?.object?.scene
-            else { fatalError("This should never happen!") }
-
-        guard let sound = self.sound,
-            let filePath = scene.soundsPath()
-            else { return .invalidInstruction }
-
-        return CBInstruction.execClosure { context, scheduler in
-            let audioEngine = scheduler.getAudioEngine()
-            let fileName = sound.fileName
-            context.soundList.insert(fileName)
-
-            audioEngine.playSound(fileName: fileName, key: objectName, filePath: filePath, expectation: nil)
-            context.state = .runnable
-        }
-
+     static func cellHeight() -> CGFloat {
+        CGFloat(kBrickHeight2h)
     }
 
+     func brickTitle(forBackground isBackground: Bool, andInsertionScreen isInsertion: Bool) -> String! {
+        kLocalizedStop + "\n%@"
+    }
+
+     override func hookUpSubViews(_ inlineViewSubViews: [Any]!) {
+        self.titleLabel = inlineViewSubViews[0] as? UILabel
+        self.comboBox = inlineViewSubViews[1] as? iOSCombobox
+    }
+
+     override func parameters() -> [String]! {
+        let params = NSArray.init(objects: "{STATICCHOICE}") as? [String]
+        return params
+    }
 }

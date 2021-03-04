@@ -56,5 +56,5 @@ protocol CBSchedulerProtocol: AnyObject {
 
     // audio engine
     func getAudioEngine() -> AudioEngineProtocol
-
+    func getContexts() -> [CBScriptContextProtocol]
 }

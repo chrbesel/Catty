@@ -45,4 +45,6 @@ import Foundation
     func speak(_ utterance: AVSpeechUtterance, expectation: CBExpectation?)
 
     func setInstrument(_ instrument: Instrument, key: String)
+
+    func stopAudio(for key: String, and filename: String)
 }

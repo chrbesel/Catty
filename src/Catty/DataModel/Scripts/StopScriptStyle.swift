@@ -20,27 +20,33 @@
  *  along with this program.  If not, see http://www.gnu.org/licenses/.
  */
 
-@objc extension PlaySoundBrick: CBInstructionProtocol {
+enum StopScriptStyle: Int, CaseIterable {
+    case thisScript = 0
+    case allScripts = 1
+    case otherScripts = 2
 
-    @nonobjc func instruction() -> CBInstruction {
-
-        guard let objectName = self.script?.object?.name,
-            let scene = self.script?.object?.scene
-            else { fatalError("This should never happen!") }
-
-        guard let sound = self.sound,
-            let filePath = scene.soundsPath()
-            else { return .invalidInstruction }
-
-        return CBInstruction.execClosure { context, scheduler in
-            let audioEngine = scheduler.getAudioEngine()
-            let fileName = sound.fileName
-            context.soundList.insert(fileName)
-
-            audioEngine.playSound(fileName: fileName, key: objectName, filePath: filePath, expectation: nil)
-            context.state = .runnable
+    func localizedString() -> String {
+        switch self {
+        case .thisScript:
+            return kLocalizedThisScript
+        case .allScripts:
+            return kLocalizedAllScripts
+        case .otherScripts:
+            return kLocalizeOtherScripts
         }
-
     }
 
+    static func from(rawValue: Int) -> StopScriptStyle? {
+        for style in StopScriptStyle.allCases where style.rawValue == rawValue {
+            return style
+        }
+        return nil
+    }
+
+    static func from(localizedString: String) -> StopScriptStyle? {
+        for style in StopScriptStyle.allCases where style.localizedString() == localizedString {
+            return style
+        }
+        return nil
+    }
 }

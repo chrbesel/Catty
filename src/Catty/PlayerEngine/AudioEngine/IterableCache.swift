@@ -61,6 +61,11 @@ public class IterableCache<ObjectType: AnyObject>: NSObject, NSCacheDelegate {
         keySet.removeAll()
     }
 
+    func removeObject(for key: String) {
+        cache.removeObject(forKey: key as NSString)
+        keySet.remove(key)
+    }
+
     public func cache(_ cache: NSCache<AnyObject, AnyObject>, willEvictObject obj: Any) {
         if let player = obj as? AudioPlayer {
             removeFromKeySet(key: player.getFileName())

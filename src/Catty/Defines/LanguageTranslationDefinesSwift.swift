@@ -367,6 +367,10 @@ let kLocalizedTimes = NSLocalizedString("times", comment: "")
 let kLocalizedEndOfLoop = NSLocalizedString("End of Loop", comment: "")
 let kLocalizedWhen = NSLocalizedString("When", comment: "")
 let kLocalizedBecomesTrue = NSLocalizedString("becomes true", comment: "")
+let kLocalizedStop = NSLocalizedString("Stop", comment: "")
+let kLocalizedThisScript = NSLocalizedString("this script", comment: "")
+let kLocalizedAllScripts = NSLocalizedString("all scripts", comment: "")
+let kLocalizeOtherScripts = NSLocalizedString("other scripts of this actor or object", comment: "")
 
 // motion bricks
 let kLocalizedPlaceAt = NSLocalizedString("Place at ", comment: "")

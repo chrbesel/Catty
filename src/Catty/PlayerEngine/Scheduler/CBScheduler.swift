@@ -44,6 +44,7 @@ final class CBScheduler: CBSchedulerProtocol {
     private let _lockBufferQueue = DispatchQueue(label: "org.catrobat.LockBufferQueue", attributes: [])
     private var _lastQueueIndex = 0
 
+
     var synchronizedTimerArray = SynchronizedArray<ExtendedTimer>()
 
     // MARK: Static properties
@@ -457,5 +458,9 @@ final class CBScheduler: CBSchedulerProtocol {
 
     func getAudioEngine() -> AudioEngineProtocol {
         _audioEngine
+    }
+
+    func getContexts() -> [CBScriptContextProtocol] {
+        _contexts
     }
 }

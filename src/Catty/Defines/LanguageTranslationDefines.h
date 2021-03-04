@@ -367,6 +367,10 @@
 #define kLocalizedEndOfLoop NSLocalizedString(@"End of Loop", nil)
 #define kLocalizedWhen NSLocalizedString(@"When", nil)
 #define kLocalizedBecomesTrue NSLocalizedString(@"becomes true", nil)
+#define kLocalizedStop NSLocalizedString(@"Stop", nil)
+#define kLocalizedThisScript NSLocalizedString(@"this script", nil)
+#define kLocalizedAllScripts NSLocalizedString(@"all scripts", nil)
+#define kLocalizeOtherScripts NSLocalizedString(@"other scripts of this actor or object", nil)
 
 // motion bricks
 #define kLocalizedPlaceAt NSLocalizedString(@"Place at ", nil)

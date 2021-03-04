@@ -367,6 +367,10 @@ let kLocalizedTimes = NSLocalizedString("times", bundle: Bundle(for: LanguageTra
 let kLocalizedEndOfLoop = NSLocalizedString("End of Loop", bundle: Bundle(for: LanguageTranslation.self), comment: "")
 let kLocalizedWhen = NSLocalizedString("When", bundle: Bundle(for: LanguageTranslation.self), comment: "")
 let kLocalizedBecomesTrue = NSLocalizedString("becomes true", bundle: Bundle(for: LanguageTranslation.self), comment: "")
+let kLocalizedStop = NSLocalizedString("Stop", bundle: Bundle(for: LanguageTranslation.self), comment: "")
+let kLocalizedThisScript = NSLocalizedString("this script", bundle: Bundle(for: LanguageTranslation.self), comment: "")
+let kLocalizedAllScripts = NSLocalizedString("all scripts", bundle: Bundle(for: LanguageTranslation.self), comment: "")
+let kLocalizeOtherScripts = NSLocalizedString("other scripts of this actor or object", bundle: Bundle(for: LanguageTranslation.self), comment: "")
 
 // motion bricks
 let kLocalizedPlaceAt = NSLocalizedString("Place at ", bundle: Bundle(for: LanguageTranslation.self), comment: "")

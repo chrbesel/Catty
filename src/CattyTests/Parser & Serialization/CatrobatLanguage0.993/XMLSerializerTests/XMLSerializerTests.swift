@@ -168,7 +168,7 @@ final class XMLSerializerTests: XMLAbstractTest {
         let project = self.getProjectForXML(xmlFile: "ValidProjectAllBricks0993")
 
         let brick = (project.scene.object(at: 0)!.scriptList.object(at: 0) as! Script).brickList.object(at: 46) as! StampBrick
-        let xmlElementPath = "//program/objectList/object[1]/scriptList/script[1]/brickList/brick[47]"
+        let xmlElementPath = "//program/objectList/object[1]/scriptList/script[1]/brickList/brick[50]"
 
         guard let xmlElement = brick.xmlElement(with: CBXMLSerializerContext(project: Project())) else {
             XCTFail("xmlElement is nil")
