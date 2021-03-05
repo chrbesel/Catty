@@ -362,6 +362,9 @@
 		4614B1DD25608E8B004174AD /* StitchBrickCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4614B1DC25608E8B004174AD /* StitchBrickCell.swift */; };
 		46162CBD2544AE5600DF6042 /* SetRotationStyleBrickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46162CB92544AE2D00DF6042 /* SetRotationStyleBrickTests.swift */; };
 		4647D55A23D8AF9F001A67F6 /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4647D55923D8AF9F001A67F6 /* PrivacyPolicyViewController.swift */; };
+		4691E51D25F2B03F00122891 /* SetBackgroundByIndexBrick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4691E51C25F2B03F00122891 /* SetBackgroundByIndexBrick.swift */; };
+		4691E52725F2B27B00122891 /* SetBackgroundByIndexBrickCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4691E52625F2B27B00122891 /* SetBackgroundByIndexBrickCell.swift */; };
+		4691E53225F2B32800122891 /* SetBackgroundByIndexBrick+CBXMLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4691E53125F2B32800122891 /* SetBackgroundByIndexBrick+CBXMLHandler.swift */; };
 		46A75DF425752B1200F3963D /* CircleShapeNodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A75DF325752B1200F3963D /* CircleShapeNodeTests.swift */; };
 		46B472BD2560946F007972DB /* StitchBrick+Instruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B472BA2560946E007972DB /* StitchBrick+Instruction.swift */; };
 		46B472C225609573007972DB /* StitchBrick+CBXMLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B472C125609573007972DB /* StitchBrick+CBXMLHandler.swift */; };
@@ -1083,6 +1086,8 @@
 		6FDC3CBA243942980033F252 /* RegularExpressionFunctionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDC3CB9243942980033F252 /* RegularExpressionFunctionTest.swift */; };
 		811FB6EA1A4980EF00957E10 /* ScriptCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 811FB6E91A4980EF00957E10 /* ScriptCollectionViewController.m */; };
 		81D46EA41CC29E3000653EAB /* ShapeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D46EA31CC29E3000653EAB /* ShapeButton.m */; };
+		83F822FE25EBA15B0093DD9A /* SetBackgroundByIndexBrick+Instruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F822FD25EBA15B0093DD9A /* SetBackgroundByIndexBrick+Instruction.swift */; };
+		83F8231325EBAA810093DD9A /* SetBackgroundByIndexBrickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F8230725EBA9610093DD9A /* SetBackgroundByIndexBrickTests.swift */; };
 		91FC87CEFA4B1008B213EA31 /* AlertControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FC8B4C21851D2F18232470 /* AlertControllerBuilder.swift */; };
 		91FC8B6AB3345BC25B02DF81 /* BaseAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FC8E53F7F6FEA7225F910E /* BaseAlertController.swift */; };
 		9200C2C91C808006002F5CA4 /* HideTextBrick.m in Sources */ = {isa = PBXBuildFile; fileRef = 9200C2C61C808006002F5CA4 /* HideTextBrick.m */; };
@@ -2247,6 +2252,9 @@
 		4614B1DC25608E8B004174AD /* StitchBrickCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StitchBrickCell.swift; sourceTree = "<group>"; };
 		46162CB92544AE2D00DF6042 /* SetRotationStyleBrickTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetRotationStyleBrickTests.swift; sourceTree = "<group>"; };
 		4647D55923D8AF9F001A67F6 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
+		4691E51C25F2B03F00122891 /* SetBackgroundByIndexBrick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetBackgroundByIndexBrick.swift; sourceTree = "<group>"; };
+		4691E52625F2B27B00122891 /* SetBackgroundByIndexBrickCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetBackgroundByIndexBrickCell.swift; sourceTree = "<group>"; };
+		4691E53125F2B32800122891 /* SetBackgroundByIndexBrick+CBXMLHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SetBackgroundByIndexBrick+CBXMLHandler.swift"; sourceTree = "<group>"; };
 		46A75DF325752B1200F3963D /* CircleShapeNodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleShapeNodeTests.swift; sourceTree = "<group>"; };
 		46B472BA2560946E007972DB /* StitchBrick+Instruction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StitchBrick+Instruction.swift"; sourceTree = "<group>"; };
 		46B472C125609573007972DB /* StitchBrick+CBXMLHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StitchBrick+CBXMLHandler.swift"; sourceTree = "<group>"; };
@@ -3072,6 +3080,8 @@
 		81C27425189EF94600827A95 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		81D46EA21CC29E3000653EAB /* ShapeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeButton.h; sourceTree = "<group>"; };
 		81D46EA31CC29E3000653EAB /* ShapeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeButton.m; sourceTree = "<group>"; };
+		83F822FD25EBA15B0093DD9A /* SetBackgroundByIndexBrick+Instruction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SetBackgroundByIndexBrick+Instruction.swift"; path = "PlayerEngine/Instructions/Look/SetBackgroundByIndexBrick+Instruction.swift"; sourceTree = "<group>"; };
+		83F8230725EBA9610093DD9A /* SetBackgroundByIndexBrickTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetBackgroundByIndexBrickTests.swift; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* App-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "App-Info.plist"; path = "Supporting Files/App-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		91FC8B4C21851D2F18232470 /* AlertControllerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertControllerBuilder.swift; sourceTree = "<group>"; };
 		91FC8B8C0B21945B560F7272 /* AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
@@ -4530,7 +4540,6 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2EED39A825F0F0440051CE4D /* MXSegmentedControl.framework */,
 				4C4B4CC123ED94230054C861 /* FirebaseCrashlytics.framework */,
 				4C10D9E223ED8DF500EB0C6E /* PromisesObjC.framework */,
 				4C10D9DF23ED8DCF00EB0C6E /* FirebaseInstallations.framework */,
@@ -6332,6 +6341,7 @@
 				4C0F9F6A204BD1A200E71B2D /* ThinkForBubbleBrick+CBXMLHandler.h */,
 				4C0F9F6D204BD1A300E71B2D /* ThinkForBubbleBrick+CBXMLHandler.m */,
 				E5E1E5B1257810E300D2F1BC /* SetLookByIndexBrick+CBXMLHandler.swift */,
+				4691E53125F2B32800122891 /* SetBackgroundByIndexBrick+CBXMLHandler.swift */,
 			);
 			name = Look;
 			path = LookBricks;
@@ -7105,6 +7115,7 @@
 				E579F119253DCD90009107C8 /* ChangeXByNBrickTests.swift */,
 				E579F11B253DCE2C009107C8 /* ChangeYByNBrickTests.swift */,
 				E5E1E5B32578117400D2F1BC /* SetLookByIndexBrickTests.swift */,
+				83F8230725EBA9610093DD9A /* SetBackgroundByIndexBrickTests.swift */,
 			);
 			path = Bricks;
 			sourceTree = "<group>";
@@ -9683,6 +9694,7 @@
 				4C0F9F7E204BD1F700E71B2D /* ThinkBubbleBrick+Instruction.swift */,
 				4C0F9F7D204BD1F700E71B2D /* ThinkForBubbleBrick+Instruction.swift */,
 				E5E1E5AF25780F6500D2F1BC /* SetLookByIndexBrick+Instruction.swift */,
+				83F822FD25EBA15B0093DD9A /* SetBackgroundByIndexBrick+Instruction.swift */,
 			);
 			name = Look;
 			sourceTree = "<group>";
@@ -9803,6 +9815,7 @@
 				4C0F9F40204ADC6600E71B2D /* ThinkForBubbleBrick.h */,
 				4C0F9F3E204ADC6600E71B2D /* ThinkForBubbleBrick.m */,
 				E5E1E5A925780DA100D2F1BC /* SetLookByIndexBrick.swift */,
+				4691E51C25F2B03F00122891 /* SetBackgroundByIndexBrick.swift */,
 			);
 			path = Look;
 			sourceTree = "<group>";
@@ -10045,6 +10058,7 @@
 				4C0F9FA4204BD2C200E71B2D /* ThinkForBubbleBrickCell.h */,
 				4C0F9FA1204BD2C100E71B2D /* ThinkForBubbleBrickCell.m */,
 				E5E1E5AD25780E3200D2F1BC /* SetLookByIndexBrickCell.swift */,
+				4691E52625F2B27B00122891 /* SetBackgroundByIndexBrickCell.swift */,
 			);
 			path = Look;
 			sourceTree = "<group>";
@@ -11876,6 +11890,7 @@
 				BC35168C231D00B90090872A /* SpriteBubbleConstraintsTests.swift in Sources */,
 				18B8021F2469170400201847 /* BrickCellVariableDataTests.swift in Sources */,
 				4C6FE15E212D2D2E0067B7D5 /* MaxFunctionTest.swift in Sources */,
+				83F8231325EBAA810093DD9A /* SetBackgroundByIndexBrickTests.swift in Sources */,
 				1833ED942446572F0053BF7C /* HelpWebViewControllerTests.swift in Sources */,
 				4C822674213FA7A400F3D750 /* InclinationXSensorTest.swift in Sources */,
 				4C68FC8F1B25A00B00AB3EE8 /* FormulaParserTest.m in Sources */,
@@ -12181,6 +12196,7 @@
 				AA74F0B51BC05FCE00D1E954 /* ChangeSizeByNBrickCell.m in Sources */,
 				4CE67888210C4B1D00D90B5D /* Function.swift in Sources */,
 				92FF2EC01A24C8A700093DA7 /* OrderedDictionary.m in Sources */,
+				4691E51D25F2B03F00122891 /* SetBackgroundByIndexBrick.swift in Sources */,
 				AA74F0CD1BC05FCE00D1E954 /* StartScriptCell.m in Sources */,
 				5E21DA7121A5289F00017D2C /* DataExtension.swift in Sources */,
 				92FF31491A24DEB300093DA7 /* BaseCollectionViewController.m in Sources */,
@@ -12256,6 +12272,7 @@
 				4CF429ED213A82EB00B78897 /* IfThenLogicBeginBrick+Condition.swift in Sources */,
 				92C631911BC50DEE00486958 /* LanguageTranslationDefinesSwift.swift in Sources */,
 				AA74EEE51BC057B900D1E954 /* WaitBrick+CBXMLHandler.m in Sources */,
+				4691E52725F2B27B00122891 /* SetBackgroundByIndexBrickCell.swift in Sources */,
 				5E43D71821928053006FDF2A /* SwellAll.swift in Sources */,
 				AA74F0B01BC05FCE00D1E954 /* SetBrightnessBrickCell.m in Sources */,
 				18390A6D24D057E100A07DFD /* StampBrickCell.swift in Sources */,
@@ -12679,6 +12696,7 @@
 				92FF31021A24DCAA00093DA7 /* BroadcastScript.m in Sources */,
 				4C994E0A207A3D4100C415FD /* Sensor.swift in Sources */,
 				AA74F00D1BC05B5F00D1E954 /* SpeakBrick.m in Sources */,
+				4691E53225F2B32800122891 /* SetBackgroundByIndexBrick+CBXMLHandler.swift in Sources */,
 				4C0F9F1C204ADB5900E71B2D /* ChooseCameraBrick+Instruction.swift in Sources */,
 				AA74EEDE1BC057B900D1E954 /* IfLogicBeginBrick+CBXMLHandler.m in Sources */,
 				92FF2E931A24C7D800093DA7 /* RuntimeImageCache.m in Sources */,
@@ -12805,6 +12823,7 @@
 				AA74EFE51BC05B5F00D1E954 /* IfLogicElseBrick.m in Sources */,
 				4C0F9F7C204BD1EC00E71B2D /* SetBackgroundBrick+Instruction.swift in Sources */,
 				4C0F9FA6204BD2C200E71B2D /* ThinkBubbleBrickCell.m in Sources */,
+				83F822FE25EBA15B0093DD9A /* SetBackgroundByIndexBrick+Instruction.swift in Sources */,
 				46E9E4A425AF53A100027D28 /* CircleShapeNode.swift in Sources */,
 				AA74EFFB1BC05B5F00D1E954 /* ChangeSizeByNBrick.m in Sources */,
 				92ED4D7D1BA9C1380052C852 /* RegisterViewController.m in Sources */,
